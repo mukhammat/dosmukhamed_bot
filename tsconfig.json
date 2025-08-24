@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "EsNext",
+    "module": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "baseUrl": "./"
+  },
+  "include": ["src/*"]
+}
