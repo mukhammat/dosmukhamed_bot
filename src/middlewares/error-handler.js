@@ -1,6 +1,11 @@
 import { HttpError, GrammyError } from "grammy";
 import { CustomError } from "../errors/custom-error.js";
 
+/**
+ * 
+ * @param {*} err 
+ * @returns 
+ */
 export const errorHandler = async (err) => {
   const ctx = err.ctx;
   const e = err.error;

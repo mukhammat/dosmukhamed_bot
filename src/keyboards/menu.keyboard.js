@@ -12,7 +12,7 @@ export const chooseLangMenu = async (ctx) => {
     .row()
     .text('🇸🇦 العربية', 'ar');
 
-  const message = "السلام عليكم ورحمة الله وبركاته"
+  const message = "🏳️";
   try {
     await ctx.editMessageText(message, {
       reply_markup: keyboard,
