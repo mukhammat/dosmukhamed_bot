@@ -12,12 +12,13 @@ export const chooseLangMenu = async (ctx) => {
     .row()
     .text('🇸🇦 العربية', 'ar');
 
+  const message = "السلام عليكم ورحمة الله وبركاته"
   try {
-    await ctx.editMessageText("السلام عليكم ورحمة الله وبركاته", {
+    await ctx.editMessageText(message, {
       reply_markup: keyboard,
     });
   } catch (err) {
-    await ctx.reply("السلام عليكم ورحمة الله وبركاته", {
+    await ctx.reply(message, {
       reply_markup: keyboard,
     });
   }
@@ -30,10 +31,10 @@ export const chooseLangMenu = async (ctx) => {
 export const mainMenu = async (ctx) => {
   const keyboard = new InlineKeyboard()
     .text(ctx.t("about"), "about")
-    .text(ctx.t("services"), "btn2")
+    .text(ctx.t("services"), "services")
     .row()
-    .text(ctx.t("projects"), "btn2")
-    .text(ctx.t("contacts"), "btn2")
+    .text(ctx.t("projects"), "projects")
+    .text(ctx.t("contacts"), "contacts")
     .row()
     .text(ctx.t("back"), "chooseLangMenu");
 

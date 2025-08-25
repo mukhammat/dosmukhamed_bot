@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { Bot } from "grammy";
+import { Bot, session } from "grammy";
 import { errorHandler } from "./middlewares/error-handler.js";
 import { callbacks } from "./callbacks/callbacks.js";
 import { startCommand } from "./commands/start.command.js";
@@ -22,9 +22,19 @@ const bot = new Bot(process.env.BOT_TOKEN);
  * @type {I18nType}
  */
 const i18n = new I18n({
-  directory: "locales", // Load all translation files from locales/.,
+  directory: "locales",
+  useSession: true,
+  defaultLocale: 'en'
 });
 
+
+bot.use(
+  session({
+    initial: () => {
+      return {};
+    },
+  }),
+);
 bot.use(i18n);
 
 // Commands
