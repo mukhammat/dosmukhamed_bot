@@ -5,4 +5,5 @@ projects = Projects
 contacts = Contacts
 services = Services
 back = Back
-aboutme = ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ My love Noha
+aboutme = My name is Dosmukhamed, I'm a Backend NodeJs Developer
+botconstructer = Bot constructer

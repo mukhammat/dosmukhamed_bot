@@ -2,7 +2,7 @@ import { mainMenu, chooseLangMenu } from "../keyboards/menu.keyboard.js";
 
 /**
  *
- * @param {import("src/index.js").BotType} bot
+ * @param {import("../index.js").BotType} bot
  */
 export const menuCallback = (bot) => {
   bot.callbackQuery("ru", async (ctx) => {

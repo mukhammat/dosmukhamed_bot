@@ -5,4 +5,5 @@ projects = Проекты
 contacts = Контакты
 services = Услуги
 back = Назад
-aboutme = ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ Нуха моя любовь
+aboutme = Меня зовут Досмухамед, я Backend NodeJs разработчик
+botconstructer = Бот конструктер

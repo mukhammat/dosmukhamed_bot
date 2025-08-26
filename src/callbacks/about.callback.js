@@ -2,7 +2,7 @@
 
 /**
  *
- * @param {import("src/index.js").BotType} bot
+ * @param {import("../index.js").BotType} bot
  */
 export const aboutCallback = (bot) => {
   bot.callbackQuery("about", async (ctx) => {

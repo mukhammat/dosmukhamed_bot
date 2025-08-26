@@ -1,12 +1,27 @@
 {
   "compilerOptions": {
-    "target": "EsNext",
+    "target": "ESNext",
     "module": "NodeNext",
+
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
+
     "strict": true,
-    "baseUrl": "./"
+    "noImplicitAny": true,
+    "strictNullChecks": true, // null/undefined должны явно учитываться
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "alwaysStrict": true,
+
+    "noUnusedLocals": true,  // запретить неиспользуемые переменные
+    "noUnusedParameters": true, // запретить неиспользуемые аргументы
+    "noImplicitReturns": true,  // все пути функции должны что-то возвращать
+    "noFallthroughCasesInSwitch": true, // защита от fallthrough в switch
+    "useUnknownInCatchVariables": true, // catch (e) => e: unknown
+
+    "forceConsistentCasingInFileNames": true, // чувствительность к регистру
+    "exactOptionalPropertyTypes": true // `?` поля проверяются точно
   },
-  "include": ["src/*"]
+  "include": ["src"]
 }

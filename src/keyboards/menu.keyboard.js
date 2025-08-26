@@ -26,7 +26,7 @@ export const chooseLangMenu = async (ctx) => {
 
 /**
  *
- * @param {import('src/index.js').ContextType} ctx
+ * @param {import('../index.js').ContextType} ctx
  */
 export const mainMenu = async (ctx) => {
   const keyboard = new InlineKeyboard()
@@ -35,6 +35,8 @@ export const mainMenu = async (ctx) => {
     .row()
     .text(ctx.t("projects"), "projects")
     .text(ctx.t("contacts"), "contacts")
+    .row()
+    .text(ctx.t("botconstructer"), "bot_constructer")
     .row()
     .text(ctx.t("back"), "chooseLangMenu");
 
